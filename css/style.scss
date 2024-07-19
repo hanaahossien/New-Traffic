@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	text-align: right;
+}
+
+
+@media (min-width: 1200px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 95% !important;
+	}
+}
+
+$blue: #0f2d7c;
+@font-face {
+	font-family: "NeoSansArabic";
+	src: url(../webfonts/NeoSansArabic.ttf);
+}
+body {
+	// font-family: "Roboto", sans-serif !important;
+	font-family: "NeoSansArabic";
+	color: #181818 !important;
+}
+.bg-grey {
+	background: #e1eae7;
+}
+p {
+	line-height: 2 !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	li.nav-item {
+		margin: 0 27px;
+		font-size: 18px;
+	}
+}
+
+.title {
+	font-size: 40px;
+	font-weight: normal !important;
+}
+
+.portfolio {
+
+	.nav-pills a{
+		color: #181818 !important;
+	}
+	.images .col-md-6,
+	.images .col-md-5 {
+		padding: 0;
+	}
+	.col-md-3,
+	.images .col-md-6 img,
+	.images .col-md-5 img {
+		border: 0.3px solid #4f4f4f;
+		outline-style: inherit;
+		border-right: none;
+	}
+	.bg-blue {
+		color: #0f2d80 !important;
+		background-color: #ffd83c;
+	}
+}
+footer {
+	background-color: black;
+
+	font-size: 14px;
+	.end {
+		border-top: 1px solid #fff;
+		a {
+			color: #fff !important;
+			margin-right: 15px;
+		}
+	}
+	.display-5 {
+		font-size: 2.5rem;
+	}
+	.contact {
+		.btn-dark {
+			background-color: black;
+		}
+		input,
+		textarea {
+			outline: none !important;
+			background-color: transparent;
+			width: 100%;
+			margin-bottom: 30px;
+			line-height: 37px;
+			border: none;
+			border-bottom: 2px solid #fff;
+			color: #fff;
+		}
+		::placeholder {
+			color: #fff;
+			opacity: 1; /* Firefox */
+		}
+
+		::-ms-input-placeholder {
+			/* Edge 12 -18 */
+			color: #fff;
+		}
+	}
+}
+
+section#employ {
+	.sticky {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 0;
+	}
+	.border-top {
+			border-top: 1px solid #181818 !important;
+		}
+	.name {
+		line-height: 1.4;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 15px 0 10px;
+		text-transform: uppercase;
+		word-spacing: 4px;
+		letter-spacing: 1px;
+	}
+	.jobtitle:after {
+		content: "";
+		background: black;
+		width: 50px;
+		height: 3px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.jobtitle {
+		font-size: 14px;
+		position: relative;
+		padding-bottom: 15px;
+	}
+}
+
+section.client{
+	.border-top {
+			border-top: 1px solid #181818 !important;
+		}
+}
+
+// code for scroll
+.txt {
+	overflow-y: scroll;
+	height: 561px;
+}
+
+.txt::-webkit-scrollbar {
+	display: none;
+}
+
+.myimg {
+	position: -webkit-sticky;
+	/* Safari */
+	position: sticky;
+	top: 0;
+}
+
+.mycol7 {
+	height: auto;
+	overflow: visible;
+}
+
+// section#topsection {
+// background-image: url(../images/1.jpg);
+// height:600px;
+// background-size: 100% 100%;
+// background-attachment: fixed;
+// background-position: right bottom;
+// }
+
+// .border-top {
+// 	border-top: 1px solid #181818 !important;
+// }
+.owl-stage-outer {
+	direction: ltr;
+}
+.owl-client {
+	.jobtitle:after {
+		display: none;
+	}
+
+	.owl-dots.disaled,
+	.owl-nav.disabled {
+		display: inline-block !important;
+	}
+	button.owl-prev span {
+		font-size: 60px;
+		top: 28%;
+		font-weight: lighter;
+		position: absolute;
+		right: 30px;
+		color: #181818;
+	}
+	button.owl-next span {
+		font-size: 60px;
+		color: #181818;
+		top: 28%;
+		position: absolute;
+		left: 30px;
+		color: #181818;
+	}
+}
+
+.owl-work {
+	.jobtitle:after {
+		display: none;
+	}
+
+	.owl-dots.disaled,
+	.owl-nav.disabled {
+		display: inline-block !important;
+	}
+	button.owl-prev span {
+		font-size: 50px;
+		top: 30%;
+		font-weight: lighter;
+		position: absolute;
+		right: 12px;
+		color: #fff;
+	}
+	button.owl-next span {
+		font-size: 50px;
+		color: #fff;
+		top: 30%;
+		position: absolute;
+		left: 12px;
+	}
+}
+
+.project {
+	.border-bottom {
+		border-bottom: 	1px solid #a4a4a4 !important;
+		} 
+	.border-top {
+	border-top: 	1px solid #a4a4a4 !important;
+	} 
+	.img.overlay::after {
+		transition: background-color 0.4s;
+
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: rgb(8, 8, 8), $alpha: 0);
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+	}
+
+	.img:hover.overlay::after {
+		background-color: rgba($color: rgb(8, 8, 8), $alpha: 0.4);
+	}
+	.overlay span {
+		position: absolute;
+		z-index: 10;
+		bottom: 50px;
+		right: 50px;
+		color: #fff;
+		display: none;
+	}
+	.overlay:hover span {
+		display: block;
+	}
+}
+.details {
+	.bg-image {
+		height: 75%;
+		background-image: url(../images/PROJ/5.png);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		background-position: center top;
+	}
+}
